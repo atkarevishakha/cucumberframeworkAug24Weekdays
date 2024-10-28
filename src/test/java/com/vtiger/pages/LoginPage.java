@@ -59,6 +59,7 @@ public class LoginPage extends PageActions {
 
     public void login(String uid,String pwd)
     {
+        System.out.println("hello");
         SetUserName(uid);
         SetPassword(pwd);
         clickLogin();
