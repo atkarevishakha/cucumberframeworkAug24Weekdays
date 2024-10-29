@@ -24,6 +24,7 @@ public class AccountPage extends HeaderPage{
 
         SetAccountName(acc);
         clickSave();
+        //added some comment
     }
 
     public void SetAccountName(String acc)
