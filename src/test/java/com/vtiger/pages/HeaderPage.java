@@ -29,6 +29,10 @@ public class HeaderPage extends PageActions {
     @FindBy(linkText = "New Account")
     WebElement lnk_NewAccount;
 
+    @FindBy(linkText = "New Contact")
+    WebElement New_Contact;
+
+
     public void verifyHome()
     {
         ElementExist(lnk_Home,"Link Home is displayed on home page");
@@ -59,5 +63,9 @@ public class HeaderPage extends PageActions {
         ClickElement(lnk_NewAccount,"Link New Account clicked successfully");
     }
 
+    public void clickNContact() {
+
+        ClickElement(New_Contact," Successfully clicked on New Contact link");
+    }
 
 }
