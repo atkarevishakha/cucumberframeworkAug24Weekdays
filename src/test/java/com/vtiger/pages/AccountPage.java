@@ -21,7 +21,7 @@ public class AccountPage extends HeaderPage{
 
     public void createAccount(String acc)
     {
-
+      //  System.out.println("testing code");
         SetAccountName(acc);
         clickSave();
     }
