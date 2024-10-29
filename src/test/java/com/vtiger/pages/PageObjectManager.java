@@ -16,6 +16,7 @@ public class PageObjectManager {
     public static ExtentHtmlReporter htmlReporter;
     public static ExtentReports extent;
     public static ExtentTest logger;
+    public static ContactPage ContPage;
 
     public LoginPage getLoginPage()
     {
@@ -40,6 +41,10 @@ public class PageObjectManager {
     public AccountPage getAccountPage()
     {
         return ap = (ap == null) ? new AccountPage(driver, logger) : ap;
+    }
+
+    public ContactPage getContactPage(){
+        return ContPage=(ContPage==null) ? new ContactPage(driver,logger) : ContPage;
     }
 
 }
