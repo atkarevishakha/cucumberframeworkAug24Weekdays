@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
         glue = "com.vtiger.stepdefinitions",
         dryRun = false,
         plugin = {"pretty", "html:target/cucumber-html-report.html", "json:target/cucumber.json"},
-        tags = "@contact",
-        monochrome = false
+        tags = "@regression",
+        monochrome = true
 
 )
 public class TestRunner {

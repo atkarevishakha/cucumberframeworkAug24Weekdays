@@ -1,10 +1,10 @@
-@regression
+@regression  @contact
 Feature: contact functionality
 
   Background:
     Given user should be on login page
 
-  @contact
+
   Scenario: TC05_create_contact_with_mandatory_fields
 
     When user enter the valid credentials along with theme and click on login button

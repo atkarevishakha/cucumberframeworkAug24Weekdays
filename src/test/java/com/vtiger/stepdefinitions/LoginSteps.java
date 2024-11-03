@@ -1,11 +1,10 @@
 package com.vtiger.stepdefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
+import io.cucumber.java.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.AfterClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,10 +24,11 @@ public class LoginSteps extends BaseSteps {
         logger = extent.createTest(ScenarioName);
     }
     @After
-    public void savereport()
-    {
+    public static void savereport() {
+        if (driver != null) {
+            driver.quit();  // Use quit instead of close
+        }
         extent.flush();
-        driver.quit();
     }
 
 
