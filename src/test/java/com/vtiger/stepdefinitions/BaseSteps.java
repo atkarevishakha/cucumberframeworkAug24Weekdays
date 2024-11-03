@@ -49,12 +49,6 @@ public class BaseSteps extends PageObjectManager {
         {
             driver = new FirefoxDriver();
         }
-        else  if(prop.getProperty("browser").equalsIgnoreCase("headless"))
-        {
-            ChromeOptions option = new ChromeOptions();
-            option.addArguments("--headless");
-            driver = new ChromeDriver(option);
-        }
         else
         {
             driver = new ChromeDriver();
