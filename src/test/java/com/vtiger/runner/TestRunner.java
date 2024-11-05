@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "com.vtiger.stepdefinitions",
         dryRun = false,
         plugin = {"pretty", "html:target/cucumber-html-report.html", "json:target/cucumber.json"},
-        tags = "@account",
+        tags = "@login",
         monochrome = false
 
 )

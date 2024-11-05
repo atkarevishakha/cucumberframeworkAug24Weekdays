@@ -41,6 +41,10 @@ public class BaseSteps extends PageObjectManager {
         readExcel(System.getProperty("user.dir")+"/src/test/resources/Data/TestData.xlsx","Sheet1");
         System.out.println(td);
        // System.exit(0);
+
+        System.out.println("jenkins url ="+ System.getProperty("url"));
+        System.out.println("jenkins browser ="+ System.getProperty("browser"));
+
         if(prop.getProperty("browser").equalsIgnoreCase("edge"))
         {
             driver = new EdgeDriver();
